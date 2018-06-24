@@ -16,8 +16,8 @@ function requestToPromise(url, cookies){
     domain : 'espn.com'
   });
 
-  cookieJar.setCookie(espnS2, 'http://games.espn.com/');
-  cookieJar.setCookie(SWID, 'http://games.espn.com/');
+  cookieJar.setCookie(espnS2.toString(), 'http://games.espn.com/');
+  cookieJar.setCookie(SWID.toString(), 'http://games.espn.com/');
 
   const options = {
     method : 'GET',
